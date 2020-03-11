@@ -3,10 +3,10 @@ import {StyleSheet, Text, View} from 'react-native';
 
 import {Header} from '../../Shared';
 
-const HomeScreen = () => {
+const HomeScreen: React.FC = () => {
   return (
     <React.Fragment>
-      <Header />
+      <Header title="Movies" />
       <View style={styles.container}>
         <Text>Home Screen</Text>
       </View>
