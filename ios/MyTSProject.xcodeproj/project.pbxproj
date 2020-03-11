@@ -194,7 +194,6 @@
 				97C1CFB4825943CFC5F74FC5 /* Pods-MyTSProjectTests.debug.xcconfig */,
 				63020029FFBF3D21CE11709C /* Pods-MyTSProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +307,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
