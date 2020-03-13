@@ -8,13 +8,18 @@
 
 import * as React from 'react';
 import Navigator from './Navigator';
+import {Provider as ReduxProvider} from 'react-redux';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+
+import {store} from '../Redux/store';
 
 const App: React.FC = () => {
   return (
-    <SafeAreaProvider>
-      <Navigator />
-    </SafeAreaProvider>
+    <ReduxProvider store={store}>
+      <SafeAreaProvider>
+        <Navigator />
+      </SafeAreaProvider>
+    </ReduxProvider>
   );
 };
 

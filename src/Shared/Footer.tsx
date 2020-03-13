@@ -9,8 +9,7 @@ const footerIcons = {
   ACCOUNT: {name: 'user', type: 'Feather'},
 };
 
-const Footer: React.FC<Props> = ({state, descriptors, navigation}) => {
-  console.log(state, descriptors, navigation);
+const Footer: React.FC<Props> = ({state, navigation}) => {
   return (
     <View style={styles.footer}>
       {state.routes.map(route => {
@@ -63,6 +62,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     alignItems: 'center',
     flexDirection: 'row',
+    elevation: 3,
   },
   footerText: {fontSize: 11},
   footerIcon: {fontSize: 20},

@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {useDispatch} from 'react-redux';
 
 import HomeScreen, {screenName as homeName} from '../Screens/HomeScreen';
 import BrowseScreen, {screenName as browseName} from '../Screens/BrowseScreen';
